@@ -56,13 +56,6 @@ if [ ! -d "$target" ]; then
     exit
 fi
 
-#if [ ! -d "$2" ]; then
-# Control will enter here if $target doesn't exist.
-#    echo -e '\nERROR: Destination directory does not exist'
-#    usage
-#    exit
-#fi
-
 # Elevate to root
 if [ $EUID != 0 ]; then
     echo '-->> Executing script as root! <<--'
